@@ -1,6 +1,7 @@
 {
     "name": "client",
-    "proxy" :"https://tranhuuphu1998.github.io/memo-app/",
+    "homepage": "https://tranhuuphu1998.github.io/memo-app/",
+    "proxy" :"http://localhost:5000",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
