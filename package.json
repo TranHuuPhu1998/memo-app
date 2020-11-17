@@ -13,10 +13,8 @@
         "dev": "concurrently \"npm run server\" \"npm run client\"",
         "heroku-postbuild": "cd client && npm install && npm run build"
     },
-    "keywords": [
-        "phu"
-    ],
-    "author": "phu",
+    "keywords": [],
+    "author": "",
     "license": "ISC",
     "dependencies": {
         "body-parser": "^1.19.0",
