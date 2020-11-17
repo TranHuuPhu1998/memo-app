@@ -51,17 +51,17 @@ app.use((req, res, next) => {
 
 //Error handler fun it me loi cua minh code
 
-// app.use((req, res, next) => {
-//     const error = app.get('env') === 'development' ? err : {}
-//     const status = err.status || 500;
-//     //Respend to client
+app.use((req, res, next) => {
+    const error = app.get('env') === 'development' ? err : {}
+    const status = err.status || 500;
+    //Respend to client
 
-//     res.status(status).json({
-//         error: {
-//             message: error.message
-//         }
-//     })
-// })
+    res.status(status).json({
+        error: {
+            message: error.message
+        }
+    })
+})
 
 const URI = process.env.MONGODB_URL
 mongoose.connect(URI , {
