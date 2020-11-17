@@ -1,0 +1,25 @@
+export const FETCH_ALL_DATA_MEMO = "FETCH_ALL_DATA_MEMO";
+export const ADD_NODE_ON_MEMO = "ADD_NODE_ON_MEMO";
+export const ON_CLICK_NODE_MEMO = "ON_CLICK_NODE_MEMO";
+export const SAVE_DATA_TO_STORE = "SAVE_DATA_TO_STORE";
+export const ON_EMPTY_DATA_NODE = "ON_EMPTY_DATA_NODE";
+export const EDIT_NODE = "EDIT_NODE";
+export const DELETE_NODE = "DELETE_NODE";
+export const UPDATE_NODE = "UPDATE_NODE";
+export const CLIP_NODE = "CLIP_NODE";
+export const SORT = "SORT";
+export const SEARCH = "SEARCH";
+export const SHOW_ALL_NODE = "SHOW_ALL_NODE";
+export const USER_LOGIN = "USER_LOGIN";
+export const CLIP_ALL = "CLIP_ALL";
+export const SHOW_CATEGORY = "SHOW_CATEGORY";
+export const SET_COLOR_PAGE = "SET_COLOR_PAGE";
+export const CHANGE_LOCALE = "CHANGE_LOCALE";
+export const HISTORY_DELETE = "HISTORY_DELETE";
+export const SHOW_HISTORY_DELETE = "SHOW_HISTORY_DELETE";
+export const RESGINTRATION = "RESGINTRATION";
+export const NEW_CATEGORY = "NEW_CATEGORY";
+export const GET_CATEGORY ="GET_CATEGORY";
+export const ADD_CATEGORY = "ADD_CATEGORY";
+
+export const OPEN_CLOES_UI_NEWCATEGORY = 'OPEN_CLOES_UI_NEWCATEGORY';
