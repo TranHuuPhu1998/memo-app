@@ -1,6 +1,6 @@
 {
     "name": "rest-ytb",
-    "homepage": "https://tranhuuphu1998.github.io/memo-app",
+    "homepage": "https://mern-memo-app.herokuapp.com",
     "version": "1.0.0",
     "description": "this is my project rest api",
     "main": "server.js",
