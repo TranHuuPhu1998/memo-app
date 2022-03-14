@@ -442,6 +442,7 @@
 }
 
 .body__nav__create--title {
+    width: 450px;
     min-width: 449px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -459,7 +460,6 @@
     cursor: pointer;
     position: relative;
     left: 300px;
-    height: calc(100vh - 71px);
 }
 
 .body__nav__create--title--name {

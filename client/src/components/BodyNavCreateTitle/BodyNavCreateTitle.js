@@ -28,10 +28,7 @@ class BodyNavCreateTitle extends Component {
     }
 
     componentDidMount() {
-        let { paginate } = this.props;
         this.props.fetchAllDataMome();
-        paginate(this.state.page)
-
     }
 
     onClickSort = sortby => {
@@ -63,7 +60,7 @@ class BodyNavCreateTitle extends Component {
                     <li className={currentPage === 1 ? "page-item" : ""} >
                         <button disabled={currentPage === 1} onClick={() => this.onpageshow(currentPage - 1)} className='page-link'>
                             Prier
-                            </button>
+                        </button>
                     </li>
                     {pageNumbers.map(number => (
                         <li key={number}>
@@ -78,7 +75,7 @@ class BodyNavCreateTitle extends Component {
                     <li className={totalPage === currentPage ? "page-item" : ""}>
                         <button disabled={totalPage === currentPage} onClick={() => this.onpageshow(currentPage + 1)} className='page-link'>
                             Next
-                            </button>
+                        </button>
                     </li>
                 </ul>
             </nav >
@@ -89,10 +86,7 @@ class BodyNavCreateTitle extends Component {
         let rs = [];
 
         let { idClick, sort, showallnote, historyDelete, posts } = this.props;
-        // if (posts) {
-        //     posts = posts;
-        // }
-        // const { posts } = this.state;
+
         if (sort.sortby === "date") {
             posts.sort((a, b) => {
                 a = new Date(a.categoryDate).getTime()
@@ -106,8 +100,7 @@ class BodyNavCreateTitle extends Component {
         if (showallnote.statusSearch && showallnote.statusSearch === "search") {
             posts = posts.filter(task => {
                 return (
-                    task.titleMemo
-                        .toLowerCase()
+                    task.titleMemo?.toLowerCase()
                         .indexOf(showallnote.keyword.toLowerCase()) !== -1
                 );
             });
@@ -216,10 +209,6 @@ class BodyNavCreateTitle extends Component {
                     <div>
                         {this.showTitleContent()}
                     </div>
-                    <div >
-                        {this.renderPage()}
-                    </div>
-
                 </div>
 
             </div >

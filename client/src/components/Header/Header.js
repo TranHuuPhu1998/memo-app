@@ -129,7 +129,6 @@ class Header extends Component {
         return rs;
     };
     onChange = event => {
-
         var target = event.target;
         var name = target.name;
         var value = target.value;
@@ -188,8 +187,8 @@ class Header extends Component {
                                 <button>
                                     <span>
                                         <img src="/images/plus-solid.svg" alt="" />
-                                    &emsp;
-                                    <FormattedMessage
+                                        &emsp;
+                                        <FormattedMessage
                                             id="Create_new"
                                             defaultMessage="Create_new"
                                         >
@@ -265,8 +264,8 @@ class Header extends Component {
                                     alt=""
                                 />
                             ) : (
-                                    <img src="/images/paperclip-solid.svg" alt="" />
-                                )}
+                                <img src="/images/paperclip-solid.svg" alt="" />
+                            )}
                             &nbsp;
                             <FormattedMessage id="Clip" defaultMessage="Clip">
                                 {x => x}
